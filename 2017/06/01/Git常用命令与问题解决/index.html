@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Siwi"/>
+        <meta property="og:title" content="Git常用命令与问题解决"/>
     
 
     <!--Open Graph Description-->
@@ -33,7 +33,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>Siwi</title>
+    <title>Git常用命令与问题解决 - Siwi</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
@@ -112,14 +112,14 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">Welcome to Mankong</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">Create Websites. Make Magic.</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Git常用命令与问题解决</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2017-06-01</p>
         </div>
     </div>
 
     <!-- Icon -->
     <div class="relative w-100 mw8 center white dn dn-m db-ns">
-        <i class="header-icon fa fa fa-magic"></i>
+        <i class="header-icon fa fa-github-alt"></i>
     </div>
 </div>
 
@@ -127,82 +127,88 @@
 <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
     <div class="content">
         <div class="mw8 center">
-            
-                <a href="/2017/06/01/Git常用命令与问题解决/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2017-06-01</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Git/'; return false;">#Git</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Git常用命令与问题解决<span>
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+                        <div class="tags-container-vertical">
+                            <div class="tags-sub-container">
+                                <a class="fw3 ph1 dib" href="/tags/Git/">#Git</a>
+                            </div>
+                        </div>
+                    
+
+                    <!-- Main Post Content -->
+                    <h1 id="Git在使用中的一些问题及解决"><a href="#Git在使用中的一些问题及解决" class="headerlink" title="Git在使用中的一些问题及解决"></a>Git在使用中的一些问题及解决</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><blockquote>
+<p>在码云创建项目 包含readme.md 或者初始化用了LICENSE 本地的仓库非空 </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init </div><div class="line">git add -A</div><div class="line">git commit -m &apos;同步代码&apos;</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">blog [master] git pull origin master</div><div class="line">warning: no common commits</div><div class="line">remote: Counting objects: 6, done.</div><div class="line">remote: Compressing objects: 100% (6/6), done.</div><div class="line">remote: Total 6 (delta 0), reused 0 (delta 0)</div><div class="line">Unpacking objects: 100% (6/6), done.</div><div class="line">From git.oschina.net:blog-md/jank2014</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line"> * [new branch]      master     -&gt; origin/master</div><div class="line">fatal: refusing to merge unrelated histories</div></pre></td></tr></table></figure>
+<p><strong>fatal:refusing to merge unrelated histories</strong></p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法:"></a>解决方法:</h2><blockquote>
+<p>git pull –allow-unrelated-histories</p>
+</blockquote>
+
+                    
+                    <!-- Tags Bottom -->
+                    
+                        <div class="tags-container-bottom">
+                            <i class="fa fa-tag pr3 text-main-color"></i><a class="fw3 ph1 dib" href="/tags/Git/">#Git</a>
+                        </div>
+                    
+
+                    <!-- Comments -->
+                    
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+                    
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="http://tachyons.io/img/avatar_1.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="赵文强">
         </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-github-alt"></i>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            My name is Mankong and this is my blog.<br>I am a full stack software engineer with a strong front-end focus.<br> I currently live and work in Singapore, hit me up if you are in the region.
         </div>
-    </div>
-</a>
-            
-                <a href="/2017/06/01/serve/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2017-06-01</span> 
-                
-                
-                <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Centos7/'; return false;">#Centos7</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Nodejs/'; return false;">#Nodejs</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/MongoDB/'; return false;">#MongoDB</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/LNMPP/'; return false;">#LNMPP</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Mysql/'; return false;">#Mysql</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/PostgreSQL/'; return false;">#PostgreSQL</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/Redis/'; return false;">#Redis</span> <span class="fake-link fw3 ph1 dib" onclick="location.href = '/tags/PHP/'; return false;">#PHP</span>
-                
-            </div>
-            <span class="f3 fw3 lh-copy">NodeJs MongoDB && LNMPP  安装配置与实践 服务器安装配置 ECS等同<span>
-        </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-file-text-o"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2017/06/01/Start/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2017-06-01</span> 
-                
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Untitled<span>
-        </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-file-text-o"></i>
-        </div>
-    </div>
-</a>
-            
-                <a href="/2017/06/01/hello-world/">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                
-                    <span class="f5 fw3 lh-copy pr4">2017-06-01</span> 
-                
-                
-            </div>
-            <span class="f3 fw3 lh-copy">Hello World<span>
-        </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa fa-file-text-o"></i>
-        </div>
-    </div>
-</a>
-            
-        </div>
-    </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+                    
+                    <!-- Widget 2: Categories -->
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>Recent Posts</h3>
     
+        <p>
+            <a href="/2017/06/01/Git常用命令与问题解决/">Git常用命令与问题解决</a>
+        </p>
+    
+        <p>
+            <a href="/2017/06/01/serve/">NodeJs MongoDB &amp;&amp; LNMPP  安装配置与实践 服务器安装配置 ECS等同</a>
+        </p>
+    
+        <p>
+            <a href="/2017/06/01/Start/">Untitled</a>
+        </p>
+    
+        <p>
+            <a href="/2017/06/01/hello-world/">Hello World</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
