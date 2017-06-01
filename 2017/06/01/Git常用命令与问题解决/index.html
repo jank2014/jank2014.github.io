@@ -142,8 +142,8 @@
                     <h1 id="Git在使用中的一些问题及解决"><a href="#Git在使用中的一些问题及解决" class="headerlink" title="Git在使用中的一些问题及解决"></a>Git在使用中的一些问题及解决</h1><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><blockquote>
 <p>在码云创建项目 包含readme.md 或者初始化用了LICENSE 本地的仓库非空 </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init </div><div class="line">git add -A</div><div class="line">git commit -m &apos;同步代码&apos;</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">blog [master] git pull origin master</div><div class="line">warning: no common commits</div><div class="line">remote: Counting objects: 6, done.</div><div class="line">remote: Compressing objects: 100% (6/6), done.</div><div class="line">remote: Total 6 (delta 0), reused 0 (delta 0)</div><div class="line">Unpacking objects: 100% (6/6), done.</div><div class="line">From git.oschina.net:blog-md/jank2014</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line"> * [new branch]      master     -&gt; origin/master</div><div class="line">fatal: refusing to merge unrelated histories</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git init </div><div class="line">git add -A</div><div class="line">git commit -m <span class="string">'同步代码'</span></div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">blog [master] git pull origin master</div><div class="line">warning: no common commits</div><div class="line">remote: Counting objects: 6, <span class="keyword">done</span>.</div><div class="line">remote: Compressing objects: 100% (6/6), <span class="keyword">done</span>.</div><div class="line">remote: Total 6 (delta 0), reused 0 (delta 0)</div><div class="line">Unpacking objects: 100% (6/6), <span class="keyword">done</span>.</div><div class="line">From git.oschina.net:blog-md/jank2014</div><div class="line"> * branch            master     -&gt; FETCH_HEAD</div><div class="line"> * [new branch]      master     -&gt; origin/master</div><div class="line">fatal: refusing to merge unrelated histories</div></pre></td></tr></table></figure>
 <p><strong>fatal:refusing to merge unrelated histories</strong></p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法:"></a>解决方法:</h2><blockquote>
 <p>git pull –allow-unrelated-histories</p>
@@ -201,7 +201,7 @@
         </p>
     
         <p>
-            <a href="/2017/06/01/hello-world/">Hello World</a>
+            <a href="/2017/06/01/hello-world/">Hexo Start</a>
         </p>
     
 </div>
